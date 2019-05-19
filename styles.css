@@ -26,6 +26,7 @@
 /* End of keyframes */
 html body {
 	background-color: black;
+	overflow: hidden;
 }
 .container {
 	width: 100vw;
@@ -35,6 +36,7 @@ html body {
 	align-items: center;
 	background-color: #282c34;
 }
+
 .svg {
 	width: 70vw;
 	height: 70vh;
@@ -73,9 +75,6 @@ html body {
 	stroke-dasharray: 35px 15px;
 	animation: Orbit 1s linear infinite;
 }
-.claw:hover {
-	fill: url(#gradient-vertical) black;
-}
 
 .back {
 	fill-opacity: 1;
@@ -84,6 +83,7 @@ html body {
 	stroke-dasharray: 35px 15px;
 	animation: Orbit 1s linear infinite;
 }
-.back:hover {
+
+.content:hover {
 	fill: url(#gradient-vertical) black;
 }
