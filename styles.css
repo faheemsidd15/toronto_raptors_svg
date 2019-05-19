@@ -1,0 +1,86 @@
+@keyframes Orbit {
+	to {
+		stroke-dashoffset: 50px;
+	}
+}
+
+@keyframes ReverseOrbit {
+	to {
+		stroke-dashoffset: -50px;
+	}
+}
+
+@keyframes Pulse {
+	to {
+		fill: url(#gradient-background) transparent;
+	}
+}
+@keyframes ColorChange {
+	0% {
+		fill: url(#gradient-vertical) #447799;
+	}
+	100% {
+		fill: black;
+	}
+}
+/* End of keyframes */
+html body {
+	background-color: black;
+}
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #282c34;
+}
+.svg {
+	width: 70vw;
+	height: 70vh;
+}
+
+#gradient-horizontal {
+	--color-stop-1: #a770ef;
+	--color-stop-2: #cf8bf3;
+	--color-stop-3: #fdb99b;
+}
+#gradient-vertical {
+	--color-stop-1: #f651ca;
+	--color-stop-2: #f651b4;
+	--color-stop-3: #f54747;
+}
+#gradient-vertical-alternate {
+	--color-stop-1: #00c3ff;
+	--color-stop-2: #77e190;
+	--color-stop-3: #ffff1c;
+}
+#gradient-background {
+	--color-stop-1: #e1e6e7;
+	--color-stop-2: #7c817d;
+	--color-stop-3: #111110;
+}
+
+#background {
+	fill: transparent;
+	/* animation: Pulse 5s infinite alternate; */
+}
+
+.claw {
+	fill-opacity: 1;
+	stroke: black;
+	stroke-width: 3px;
+	stroke-dasharray: 35px 15px;
+	animation: Orbit 1s linear infinite;
+}
+.claw:hover {
+	fill: url(#gradient-vertical) black;
+}
+
+.back {
+	fill-opacity: 1;
+	stroke: black;
+	stroke-width: 3px;
+	stroke-dasharray: 35px 15px;
+	animation: Orbit 1s linear infinite;
+}

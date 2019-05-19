@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script type="text/javascript" src="js-file.js"></script>
+		<title>Toronto Raptors</title>
+	</head>
+	<body>
+		<div class="container">
+			<svg
+				version="1.1"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				preserveAspectRatio="xMidYMid meet"
+				viewBox="0 0 640 640"
+				width="640"
+				height="640"
+				class="svg"
+				onmouseout="mouseLeave()"
+			>
+				<linearGradient id="my-cool-gradient" x2="2" y2="1">
+					<stop offset="0%" stop-color="red" />
+					<stop offset="50%" stop-color="black" />
+					<stop offset="100%" stop-color="#112266" />
+				</linearGradient>
+
+				<linearGradient id="gradient-horizontal">
+					<stop offset="0%" stop-color="var(--color-stop-1)" />
+					<stop offset="50%" stop-color="var(--color-stop-2)" />
+					<stop offset="100%" stop-color="var(--color-stop-3)" />
+				</linearGradient>
+				<linearGradient id="gradient-vertical" x2="0" y2="1">
+					<stop offset="0%" stop-color="var(--color-stop-1)" />
+					<stop offset="50%" stop-color="var(--color-stop-2)" />
+					<stop offset="100%" stop-color="var(--color-stop-3)" />
+				</linearGradient>
+				<linearGradient id="gradient-vertical-alternate" x2="0" y2="1">
+					<stop offset="0%" stop-color="var(--color-stop-1)" />
+					<stop offset="50%" stop-color="var(--color-stop-2)" />
+					<stop offset="100%" stop-color="var(--color-stop-3)" />
+				</linearGradient>
+				<linearGradient id="gradient-background" x2="0" y2="1">
+					<stop offset="0%" stop-color="var(--color-stop-1)" />
+					<stop offset="50%" stop-color="var(--color-stop-2)" />
+					<stop offset="100%" stop-color="var(--color-stop-3)" />
+				</linearGradient>
+				<defs>
+					<path
+						d="M520 300C520 408.18 432.18 496 324 496C215.82 496 128 408.18 128 300C128 191.82 215.82 104 324 104C432.18 104 520 191.82 520 300Z"
+						id="background"
+						onmouseover="mouseEnter()"
+					></path>
+					<path
+						d="M141.11 238.55C149.5 231.07 165.03 220.08 187.7 205.6L208.3 204.48C215.74 203.57 222.61 201.89 228.9 199.46C235.2 197.03 240.92 193.84 246.07 189.89L280.61 192.13L294.15 179.92L340.4 176.42L357.1 179.92L375.41 192.13L440.05 199.46L453.24 241.52L415.62 247.39L398.66 241.55L380.26 244.89L366.25 238.55L361.5 243.62C337.66 252.5 322.9 256.31 317.21 255.03C313.5 254.2 309.67 247.19 306.74 246.01C303.43 244.68 302.57 251.11 300 251.31C296.79 251.56 293.46 250.67 290 248.63L274.69 248.25L253.01 270L224.18 268.09L206.01 277.64L188.84 277.64L184.26 286.42L165.95 287.54C159.93 290.89 155.1 295.25 151.47 300.62C140.57 316.73 133.57 334.2 130.46 328.08C124.25 315.83 128.52 249.77 141.11 238.55Z"
+						id="rightBigClaw"
+						class="claw"
+					></path>
+					<path
+						d="M202.23 145.98C205.1 143.87 211.51 139.08 221.46 131.59L249.26 114.6C263.82 111.41 287.31 109.16 319.73 107.84C349.88 106.62 377.67 129.29 399.73 151.05C421.79 172.81 430.01 182.39 430 189.4C430 194.06 418.51 192.92 395.54 185.95L379.73 179.19L371.42 172.17L356.49 159.19L339.73 164.13L315.14 149.19L288.72 151.49L277.23 139.19L239.73 139.19C197.03 155.3 181.96 160.16 194.53 153.79C199.04 151.5 188.73 155.9 202.23 145.98Z"
+						id="rightSmallClaw"
+						class="claw"
+					></path>
+					<path
+						d="M389.08 116.53L411.5 124L428.07 135L435.61 138.88L446.5 146.74L454 153.58L462.88 161.47L466.5 167L465.58 173.85L462 178.48L447.44 189.12L442 187.64C435.97 180.41 428.33 169.55 419.08 155.05C417.28 152.23 415.08 149.83 412.48 146.98C401.76 135.24 384.26 123.21 360 110.88L389.08 116.53Z"
+						id="rightBackCorner"
+						class="back"
+					></path>
+					<path
+						d="M460 190C465.75 185.5 469.55 180.92 471.4 176.27C473.49 176.73 475.54 177.97 477.53 180C478.63 181.13 479.27 182.49 480.45 184.1C481.39 185.39 482.36 186.84 483.35 188.44C488.43 194.35 492.63 200.58 495.96 207.12C500.95 216.94 500.17 214.8 502.36 220C503.82 223.47 504.7 226.25 505 228.34L506.36 233.01L507.42 236.66L508.93 242.14L507.4 247.77C500.93 242.98 493.46 240.76 485 241.13C476.54 241.49 469.01 241.87 462.4 242.27L455.32 217.82L446.9 197.27C449.88 196.92 454.25 194.5 460 190Z"
+						id="rightBack"
+						class="back"
+					></path>
+					<path
+						d="M161.95 391.67L177.45 391.67L190 363.17L215.45 342.67L230 340L237.95 330L260 331.57L271.58 327.17L277.1 318.57L285.92 323.15L295.6 317.57L321.6 286.57L335.6 287.57L341.6 285.57L362.1 272.57L377.1 270L390 258.07L407.02 261.33L420 258.57L434.6 253.07L456.6 252.57L462.6 303.57L441.2 306.24L423.6 315.07L413.15 312.82L408.15 318.82L395.15 320L391.65 328.82L380 333.32L370 333.32L363.15 337.32L353.65 338.32L352.15 347.32L317.25 364.17L306.25 383.67L297.25 384.67L295.75 396.17L275.75 414.17L261.25 435.67L237.75 437.17L228.25 444.67L212.75 440L205.75 444.67L200 440L193.24 434.82L181.25 436.17L153.75 398.67L161.95 391.67Z"
+						id="leftBigClaw"
+						class="claw"
+					></path>
+					<path
+						d="M488.95 253.14L515 256.45L520 293.33L518.7 310L512 330C506.07 319.61 499.52 312.95 492.35 310C485.17 307.05 477.37 305.16 468.95 304.32L468.95 277.76L464.5 251.32L488.95 253.14Z"
+						id="leftBack"
+						class="back"
+					></path>
+					<path
+						d="M313.47 480.22L315 474.68L325 470.34L331.25 457.3L346.67 436.57L348.25 425.67L353.39 409.07L367.23 404.33L363.27 399.58L375 365.2L378.54 360L398.85 350.18L405 335L415 333.18L420.98 328.04C427.65 323.31 434.44 319.86 441.36 317.69C448.28 315.51 455.32 314.22 462.48 313.81C461.96 329.78 460.02 345.18 456.66 360C453.3 374.82 448.52 389.47 442.33 403.93L420 441.22L380 478.81L360 487.64L338.74 493.09L322.56 495L295 492.87L313.47 480.22Z"
+						id="leftSmallClaw"
+						class="claw"
+					></path>
+					<path
+						d="M404.63 469.06L419.63 454.24L437.02 430.37L454.63 397.52C461.4 379.4 466.01 363.03 468.46 348.41C470.9 333.79 471.68 321.9 470.79 312.75L479.63 316.59L494.63 322.91C496.6 324.43 499.69 327.27 503.9 331.44C508.1 335.61 510.48 339.13 511.04 342.02C509.98 353.15 506.18 365.93 499.63 380.37C493.09 394.81 485.27 407.48 476.18 418.37L464.05 434.15L450.87 447.06L423.21 466.87L386.14 482.69L404.63 469.06Z"
+						id="leftBackCorner"
+						class="back"
+					></path>
+				</defs>
+				<g>
+					<g>
+						<g><use xlink:href="#background" opacity="1" fill="#d76de8" fill-opacity="0.38"></use></g>
+						<g>
+							<use xlink:href="#rightBigClaw" opacity="1" fill="#07010f" fill-opacity="0.84"></use>
+							<g>
+								<use
+									xlink:href="#rightBigClaw"
+									opacity="1"
+									fill-opacity="0"
+									stroke="#000000"
+									stroke-width="1"
+									stroke-opacity="1"
+								></use>
+							</g>
+						</g>
+						<g>
+							<use xlink:href="#rightSmallClaw" opacity="1" fill="#020005" fill-opacity="0.91"></use>
+							<g>
+								<use
+									xlink:href="#rightSmallClaw"
+									opacity="1"
+									fill-opacity="0"
+									stroke="#000000"
+									stroke-width="1"
+									stroke-opacity="1"
+								></use>
+							</g>
+						</g>
+						<g>
+							<use xlink:href="#rightBackCorner" opacity="1" fill="#020004" fill-opacity="0.75"></use>
+							<g>
+								<use
+									xlink:href="#rightBackCorner"
+									opacity="1"
+									fill-opacity="0"
+									stroke="#000000"
+									stroke-width="1"
+									stroke-opacity="1"
+								></use>
+							</g>
+						</g>
+						<g>
+							<use xlink:href="#rightBack" opacity="1" fill="#020004" fill-opacity="0.96"></use>
+							<g>
+								<use
+									xlink:href="#rightBack"
+									opacity="1"
+									fill-opacity="0"
+									stroke="#000000"
+									stroke-width="1"
+									stroke-opacity="1"
+								></use>
+							</g>
+						</g>
+						<g>
+							<use xlink:href="#leftBigClaw" opacity="1" fill="#020004" fill-opacity="0.96"></use>
+							<g>
+								<use
+									xlink:href="#leftBigClaw"
+									opacity="1"
+									fill-opacity="0"
+									stroke="#000000"
+									stroke-width="1"
+									stroke-opacity="1"
+								></use>
+							</g>
+						</g>
+						<g>
+							<use xlink:href="#leftBack" opacity="1" fill="#020004" fill-opacity="0.96"></use>
+							<g>
+								<use
+									xlink:href="#leftBack"
+									opacity="1"
+									fill-opacity="0"
+									stroke="#000000"
+									stroke-width="1"
+									stroke-opacity="1"
+								></use>
+							</g>
+						</g>
+						<g>
+							<use xlink:href="#leftSmallClaw" opacity="1" fill="#040000" fill-opacity="0.96"></use>
+							<g>
+								<use
+									xlink:href="#leftSmallClaw"
+									opacity="1"
+									fill-opacity="0"
+									stroke="#000000"
+									stroke-width="1"
+									stroke-opacity="1"
+								></use>
+							</g>
+						</g>
+						<g>
+							<use xlink:href="#leftBackCorner" opacity="1" fill="#040003" fill-opacity="0.96"></use>
+							<g>
+								<use
+									xlink:href="#leftBackCorner"
+									opacity="1"
+									fill-opacity="0"
+									stroke="#000000"
+									stroke-width="1"
+									stroke-opacity="1"
+								></use>
+							</g>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</div>
+	</body>
+</html>
